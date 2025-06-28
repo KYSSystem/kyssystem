@@ -13,32 +13,57 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
+
     header {
-      background: rgba(0, 64, 128, 0.8);
+      background: #004080;
       color: white;
       padding: 1em;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1em;
     }
+
+    header img {
+      width: 113px;
+      height: 113px;
+      object-fit: contain;
+    }
+
+    header .title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header .title h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    header .title p {
+      margin: 0.2em 0 0 0;
+      font-size: 1em;
+    }
+
     nav {
       background: #eee;
       padding: 1em;
       text-align: center;
     }
+
     nav a {
       margin: 0 1em;
       text-decoration: none;
       color: #333;
       font-weight: bold;
     }
+
     section {
       padding: 2em;
-      background-color: rgba(255, 255, 255, 0.95);
-      margin: 1em;
-      border-radius: 8px;
+      border-bottom: 1px solid #ccc;
+      background-color: rgba(255, 255, 255, 0.9);
     }
-    h2, h3 {
-      color: #004080;
-    }
+
     footer {
       background: #f2f2f2;
       text-align: center;
@@ -50,9 +75,13 @@
 <body>
 
   <header>
-    <h1>KYS-System</h1>
-    <p>보안 정책</p>
+    <img src="images/LogoKYS.png" alt="KYS-System 로고">
+    <div class="title">
+      <h1>KYS-System</h1>
+      <p>보안 정책</p>
+    </div>
   </header>
+
 
   <nav>
     <a href="index.html">홈</a>
